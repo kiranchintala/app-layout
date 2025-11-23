@@ -29,7 +29,7 @@ const SiteHeader = () => {
   ];
 
   return (
-    <header className="bg-purple-600 text-white px-6 py-3 shadow flex justify-between items-center">
+    <header className="bg-gradient-to-r from-[#8b65ff] to-[#c87dff] text-white px-6 py-3 shadow flex justify-between items-center">
       {/* Logo + Navigation */}
       <div className="flex items-center gap-8">
         <img

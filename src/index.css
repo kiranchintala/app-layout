@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Sidebar visibility: show only on large screens (>= 1024px) */
+.layout-sidebar {
+    display: none;
+    /* default: hidden on xs/md */
+}
+
+@media (min-width: 1024px) {
+    .layout-sidebar {
+        display: flex;
+        /* visible on lg/xl */
+    }
+}

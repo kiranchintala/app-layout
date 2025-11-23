@@ -30,7 +30,11 @@ const LeftNav = () => {
   ];
 
   return (
-    <nav className="w-64 h-full bg-white border-r flex flex-col items-center justify-between py-8 shadow-sm">
+    <div
+      className="w-64 h-full bg-white flex flex-col justify-between py-6"
+      role="navigation"
+      aria-label="Main sidebar navigation"
+    >
       <div className="w-full flex flex-col items-center">
         <img src="/logo.png" alt="Logo" className="w-21 h-21 mb-2" />
         <ul className="w-full px-4 space-y-1">
@@ -53,8 +57,8 @@ const LeftNav = () => {
           })}
         </ul>
       </div>
-      <div className="text-xs text-gray-400">&copy; {new Date().getFullYear()} Magic touch by Shilpa</div>
-    </nav>
+      <div className="text-xs text-gray-400 text-center w-full">&copy; {new Date().getFullYear()} Magic touch by Shilpa</div>
+    </div>
   );
 };
 

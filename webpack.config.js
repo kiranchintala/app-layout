@@ -33,8 +33,10 @@ module.exports = {
       name: 'layout',
       filename: 'remoteEntry.js',
       exposes: {
+        './LayoutFrame': './src/LayoutFrame.jsx',
         './SiteHeader': './src/components/SiteHeader.jsx',
-        './LeftNav': './src/components/LeftNav.jsx'
+        './LeftNav': './src/components/LeftNav.jsx',
+        './styles': './src/index.css',
       },
       shared: {
         react: { singleton: true, requiredVersion: '^18.2.0' },
