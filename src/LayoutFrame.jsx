@@ -6,7 +6,7 @@ import LeftNav from './components/LeftNav';
 
 const LayoutFrame = ({ children }) => {
     return (
-        <div className="w-full h-screen flex flex-col">
+        <div className="w-full min-h-screen flex flex-col mt-0 pt-0">
             <SiteHeader />
             <div className="flex flex-1">
                 <aside className="layout-sidebar w-64 bg-white border-r shadow-sm">
